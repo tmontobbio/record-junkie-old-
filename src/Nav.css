@@ -1,0 +1,23 @@
+#nav {
+	font-size: 50px;
+	font-family: "Notable", sans-serif;
+	width: 100%;
+	height: 125px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#button-group {
+	display: inline-block;
+	padding-right: 100px;
+	padding-top: 25px;
+}
+
+#title {
+	display: inline-block;
+	padding-left: 25px;
+	padding-top: 25px;
+}
+
+#nav-link {
+}
