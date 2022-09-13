@@ -1,8 +1,8 @@
 #nav-bar {
 	display: grid;
 	grid-template-rows: 100px;
-	grid-template-columns: 17vw 80vw;
-	padding: 40px 20px 20px 20px;
+	grid-template-columns: 425px 80vw;
+	padding: 40px 20px 0px 20px;
 	font-size: 50px;
 }
 
@@ -16,5 +16,5 @@
 }
 
 .ui-button {
-	width: 200%;
+	width: 27vw;
 }
