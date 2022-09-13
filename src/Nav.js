@@ -5,25 +5,19 @@ import { Button } from "semantic-ui-react"
 
 export default function Nav() {
 	return (
-		<div id="nav">
-			<div id="title">🎧 Record Junkie</div>
+		<div id="nav-bar">
+			<div id="title-container">🎧 Record Junkie</div>
 			<div id="button-container">
-				<Button.Group widths="5">
-					<Link to="/">
-						<Button className="ui button" type="button">
-							Collection
-						</Button>
-					</Link>
-					<Link to="/submit">
-						<Button className="ui button" type="button">
-							Submit Record
-						</Button>
-					</Link>
-					<Link to="/about">
-						<Button className="ui button" type="button">
-							About Us
-						</Button>
-					</Link>
+				<Button.Group>
+					<Button className="ui-button" type="button" as={Link} to="/">
+						Collection
+					</Button>
+					<Button className="ui-button" type="button" as={Link} to="/submit">
+						Submit Record
+					</Button>
+					<Button className="ui-button" type="button" as={Link} to="/about">
+						About Us
+					</Button>
 				</Button.Group>
 			</div>
 		</div>
