@@ -1,7 +1,6 @@
 import "./App.css"
 import Nav from "./Nav.js"
 import AboutUs from "./AboutUs.js"
-import SubmitRecord from "./SubmitRecord.js"
 import Collection from "./Collection.js"
 import DetailView from "./DetailView"
 import { Switch, Route } from "react-router-dom"
@@ -10,6 +9,7 @@ import { useState, useEffect } from "react"
 function App() {
 	const [records, setRecords] = useState([])
 	const [isVisible, setIsVisible] = useState(false)
+
 	useEffect(() => {
 		fetch("http://localhost:9292/records")
 			.then((r) => r.json())
@@ -20,8 +20,20 @@ function App() {
 		setIsVisible(!isVisible)
 	}
 
-	function postRecord(newRecord) {
-		setRecords([...records, newRecord])
+	function postRecord(recordObj) {
+		setRecords([...records, recordObj])
+	}
+
+	function updateRecord(record) {
+		setRecords((records) =>
+			records.map((r) => {
+				if (record.id == r.id) {
+					return record
+				} else {
+					return r
+				}
+			})
+		)
 	}
 
 	return (
@@ -39,11 +51,7 @@ function App() {
 					<AboutUs />
 				</Route>
 				<Route path="/:id">
-					<DetailView
-						setRecords={setRecords}
-						records={records}
-						postRecord={postRecord}
-					/>
+					<DetailView records={records} updateRecord={updateRecord} />
 				</Route>
 				<Route path="*">
 					<h1>404 not found</h1>
