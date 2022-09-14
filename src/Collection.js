@@ -1,7 +1,6 @@
 import React from "react"
 import RecordCard from "./RecordCard.js"
 import "./Collection.css"
-import { Card } from "semantic-ui-react"
 
 export default function Collection({ records }) {
 	const recordCard = records.map((record) => {
@@ -15,5 +14,5 @@ export default function Collection({ records }) {
 		)
 	})
 
-	return <Card.Group itemsPerRow={6}>{recordCard}</Card.Group>
+	return <div className="collection">{recordCard}</div>
 }

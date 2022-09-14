@@ -1,10 +1,12 @@
-#record-card {
+.image {
+	width: 350px;
+	height: 350px;
 }
 
-.image {
-	height: 300px;
-	width: auto;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+.image-card {
+	height: auto;
+	width: 350px;
+	display: inline-grid;
+	margin: 30px 30px 30px 30px;
+	padding-left: 30px;
 }
