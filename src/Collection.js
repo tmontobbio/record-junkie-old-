@@ -7,7 +7,7 @@ export default function Collection({ records }) {
 	const recordCard = records.map((record) => {
 		return (
 			<RecordCard
-				key={record.image_url}
+				key={record.id}
 				id={record.id}
 				image_url={record.image_url}
 				artist={record.artist}
@@ -15,5 +15,5 @@ export default function Collection({ records }) {
 		)
 	})
 
-	return <Card.Group itemsPerRow={5}>{recordCard}</Card.Group>
+	return <Card.Group itemsPerRow={6}>{recordCard}</Card.Group>
 }

@@ -7,9 +7,7 @@ export default function RecordCard({ image_url, artist, id }) {
 	return (
 		<Card>
 			<Link color="" to={`/${id}`}>
-				<div className="record-card">
-					<img src={image_url} alt={artist} className="image" />
-				</div>
+				<img src={image_url} alt={artist} className="image" />
 			</Link>
 		</Card>
 	)

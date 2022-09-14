@@ -20,21 +20,30 @@ function App() {
 		setIsVisible(!isVisible)
 	}
 
+	function postRecord(newRecord) {
+		setRecords([...records, newRecord])
+	}
+
 	return (
 		<div className="App">
-			<Nav showNewRecordForm={showNewRecordForm} isVisible={isVisible} />
+			<Nav
+				showNewRecordForm={showNewRecordForm}
+				isVisible={isVisible}
+				postRecord={postRecord}
+			/>
 			<Switch>
 				<Route exact path="/">
 					<Collection records={records} />
 				</Route>
-				{/* <Route path="/submit">
-					<SubmitRecord />
-				</Route> */}
 				<Route path="/about">
 					<AboutUs />
 				</Route>
 				<Route path="/:id">
-					<DetailView setRecords={setRecords} records={records} />
+					<DetailView
+						setRecords={setRecords}
+						records={records}
+						postRecord={postRecord}
+					/>
 				</Route>
 				<Route path="*">
 					<h1>404 not found</h1>

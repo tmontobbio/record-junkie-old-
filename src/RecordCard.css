@@ -1,9 +1,10 @@
-/* #record-card {
-    display: inline-grid;
-    height: 200px;
-    width: auto;
-} */
+#record-card {
+}
 
 .image {
-  height: 300px;
+	height: 300px;
+	width: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
