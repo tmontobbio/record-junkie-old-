@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import "./Nav.css"
+import "./index.css"
 import { Link } from "react-router-dom"
 import { Form, Input, Button } from "semantic-ui-react"
 

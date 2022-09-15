@@ -1,4 +1,4 @@
-import "./App.css"
+import "./index.css"
 import Nav from "./Nav.js"
 import AboutUs from "./AboutUs.js"
 import Collection from "./Collection.js"

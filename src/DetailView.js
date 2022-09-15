@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Form, TextArea, Button } from "semantic-ui-react"
 import { useParams } from "react-router-dom"
-
-import "./DetailView.css"
+import "./index.css"
 
 export default function DetailView({ records, updateRecord }) {
 	const [isVisible, setIsVisible] = useState(false)
@@ -32,6 +31,7 @@ export default function DetailView({ records, updateRecord }) {
 				console.log(record)
 				updateRecord(record)
 			})
+		setIsVisible(!isVisible)
 	}
 
 	function handleText(e) {
@@ -56,7 +56,7 @@ export default function DetailView({ records, updateRecord }) {
 					<span className="details">
 						<p>{record.artist}</p>
 						<p>{record.album}</p>
-						<p>Year: {record.year}</p>
+						<p>{record.year}</p>
 					</span>
 					<span className="description">{record.description}</span>
 					<br />
