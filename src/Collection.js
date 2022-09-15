@@ -1,6 +1,6 @@
 import React from "react"
 import RecordCard from "./RecordCard.js"
-import "./Collection.css"
+import "./index.css"
 
 export default function Collection({ records }) {
 	const recordCard = records.map((record) => {
@@ -14,5 +14,5 @@ export default function Collection({ records }) {
 		)
 	})
 
-	return <div className="collection">{recordCard}</div>
+	return <div id="collection">{recordCard}</div>
 }

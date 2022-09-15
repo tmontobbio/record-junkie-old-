@@ -1,6 +1,5 @@
 import React from "react"
-import "./AboutUs.css"
-import { Container, Header } from "semantic-ui-react"
+import "./index.css"
 
 export default function AboutUs() {
 	return (
