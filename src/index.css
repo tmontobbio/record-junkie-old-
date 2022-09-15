@@ -65,7 +65,6 @@ code {
 	align-items: center;
 	grid-template-columns: 350px 350px 350px 350px 350px;
 	gap: 50px;
-	overflow-y: auto;
 	padding-top: 20px;
 	background-color: transparent;
 }
@@ -79,7 +78,7 @@ code {
 
 .image-card {
 	display: flex;
-	height: auto;
+	height: 350px;
 	width: 350px;
 	-moz-box-shadow: 3px 3px 5px 6px rgb(186, 186, 186);
 	-webkit-box-shadow: 3px 3px 5px 6px rgb(185, 185, 185);
@@ -88,27 +87,63 @@ code {
 
 /*               DetailView                   */
 
-.detail-card {
-	height: auto;
-	width: 100vw;
+#detail-container {
+	display: grid;
 	justify-content: center;
+	align-items: center;
+	grid-template-columns: 600px 600px;
+	grid-template-rows: 700px;
+	gap: 50px;
+	margin: 100px;
+	padding-top: 150px;
 }
 
-.detail-image-container {
-	width: auto;
-	height: auto;
+.detail-card {
+	height: 900px;
+	width: 600px;
+	text-align: center;
+	grid-column: 1;
+	-moz-box-shadow: 3px 3px 5px 6px rgb(186, 186, 186);
+	-webkit-box-shadow: 3px 3px 5px 6px rgb(185, 185, 185);
+	box-shadow: 3px 3px 5px 6px rgb(109, 108, 108);
+	padding: 15px 15px 15px 15px;
 }
 
 .detail-image {
 	max-width: 550px;
 	height: auto;
+	padding-top: 30px;
 }
 
 .details {
-	font-size: 30px;
+	font-size: 25px;
 }
 
 .description {
+}
+
+/*               Comments                   */
+
+.comments-container {
+	width: 600px;
+	height: 900px;
+	-moz-box-shadow: 3px 3px 5px 6px rgb(186, 186, 186);
+	-webkit-box-shadow: 3px 3px 5px 6px rgb(185, 185, 185);
+	box-shadow: 3px 3px 5px 6px rgb(109, 108, 108);
+	padding: 15px;
+}
+.comments-panel {
+	height: 600px;
+	overflow-y: auto;
+}
+
+.comments-form {
+	height: 270px;
+	padding-top: 15px;
+}
+
+.comment {
+	width: 500px;
 }
 
 /*               Nav                   */

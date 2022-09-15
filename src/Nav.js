@@ -30,8 +30,8 @@ export default function Nav({ showNewRecordForm, postRecord, isVisible }) {
 		})
 			.then((r) => r.json())
 			.then((data) => postRecord(data))
-		showNewRecordForm()
 		e.target.reset()
+		showNewRecordForm()
 	}
 
 	return (

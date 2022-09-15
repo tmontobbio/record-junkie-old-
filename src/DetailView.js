@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
-import { Form, TextArea, Button } from "semantic-ui-react"
+import { Form, Input, Button, Header } from "semantic-ui-react"
 import { useParams } from "react-router-dom"
+import Comments from "./Comments"
 import "./index.css"
 
 export default function DetailView({ records, updateRecord }) {
@@ -31,6 +32,7 @@ export default function DetailView({ records, updateRecord }) {
 				console.log(record)
 				updateRecord(record)
 			})
+		e.target.reset()
 		setIsVisible(!isVisible)
 	}
 
@@ -43,50 +45,58 @@ export default function DetailView({ records, updateRecord }) {
 	}
 
 	return (
-		<div className="detail-card">
-			{record ? (
-				<>
-					<div className="detail-image-container">
-						<img
-							src={record.image_url}
-							alt={record.artist}
-							className="detail-image"
-						/>
-					</div>
-					<span className="details">
-						<p>{record.artist}</p>
-						<p>{record.album}</p>
-						<p>{record.year}</p>
-					</span>
-					<span className="description">{record.description}</span>
-					<br />
-					<Button color="blue" onClick={toggleForm}>
-						Update
-					</Button>
-					<Button color="red" onClick={deleteRecord}>
-						Delete
-					</Button>
-					<br />
-					{isVisible ? (
-						<Form onSubmit={updateDescription}>
-							<Form.Group widths="equal">
-								<Form.Field
-									onChange={handleText}
-									value={textInput}
-									id="form-textarea-control-description"
-									control={TextArea}
-									placeholder="Description"
-								/>
-							</Form.Group>
-							<Form.Field
-								id="form-button-control-public"
-								control={Button}
-								content="Confirm"
+		<div id="detail-container">
+			<div className="detail-card">
+				{record ? (
+					<>
+						<div>
+							<img
+								src={record.image_url}
+								alt={record.artist}
+								className="detail-image"
 							/>
-						</Form>
-					) : null}
-				</>
-			) : null}
+						</div>
+						<Header as="h2" dividing></Header>
+						<span className="details">
+							<p>
+								{record.artist}
+								<br />
+								{record.album}
+								<br />
+								{record.year}
+							</p>
+						</span>
+						<span className="description">{record.description}</span>
+						<br />
+						{isVisible ? (
+							<Form onSubmit={updateDescription}>
+								<Form.Group widths="equal">
+									<Form.Field
+										onChange={handleText}
+										value={textInput}
+										id="form-textarea-control-description"
+										control={Input}
+										placeholder="Description"
+									/>
+								</Form.Group>
+								<Form.Field
+									id="form-button-control-public"
+									control={Button}
+									content="Confirm"
+								/>
+							</Form>
+						) : null}
+					</>
+				) : null}
+				<Header as="h2" dividing></Header>
+				<Button color="blue" onClick={toggleForm}>
+					Update
+				</Button>
+				<Button color="red" onClick={deleteRecord}>
+					Delete
+				</Button>
+			</div>
+			<Comments id={id} />
 		</div>
 	)
 }
