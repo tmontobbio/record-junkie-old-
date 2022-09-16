@@ -21,6 +21,13 @@ code {
   font-size: xx-large;
 }
 
+.about-text2 {
+  text-align: justify;
+  padding-top: 10px;
+  padding-right: 20px;
+  font-size: xx-large;
+}
+
 #about-us {
   display: grid;
   justify-content: center;
@@ -29,6 +36,10 @@ code {
   height: 100vh;
   width: 100vw;
   padding: 40px 70px 70px 70px;
+}
+
+.brand-buttons {
+  size: 500px;
 }
 
 #pos-1 {
@@ -59,6 +70,11 @@ code {
   height: auto;
 }
 
+.venmo-icon {
+  padding-top: 30px;
+  height: 100px;
+  width: 200px;
+}
 /*               App                   */
 
 /*               Collection                   */
