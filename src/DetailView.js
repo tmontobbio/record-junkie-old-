@@ -59,9 +59,7 @@ export default function DetailView({ records, updateRecord }) {
 						<Header as="h2" dividing></Header>
 						<span className="details">
 							<p>
-								{record.artist}
-								<br />
-								{record.album}
+								{record.artist} - {record.album}
 								<br />
 								{record.year}
 							</p>

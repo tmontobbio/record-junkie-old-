@@ -1,142 +1,142 @@
 body,
 html {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding: 10px 10px 10px 10px;
-  margin: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding: 10px 10px 10px 10px;
+	margin: 0;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
 }
 
 /*               AboutUs                   */
 .about-text {
-  text-align: justify;
-  font-size: xx-large;
+	text-align: justify;
+	font-size: xx-large;
 }
 
 .about-text2 {
-  text-align: justify;
-  padding-top: 10px;
-  padding-right: 20px;
-  font-size: xx-large;
+	text-align: justify;
+	padding-top: 10px;
+	padding-right: 20px;
+	font-size: xx-large;
 }
 
 #about-us {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 800px 800px;
-  grid-template-rows: 450px 450px;
-  height: 100vh;
-  width: 100vw;
-  padding: 40px 70px 70px 70px;
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 800px 800px;
+	grid-template-rows: 450px 450px;
+	height: 100vh;
+	width: 100vw;
+	padding: 40px 70px 70px 70px;
 }
 
 .brand-buttons {
-  size: 500px;
+	size: 500px;
 }
 
 #pos-1 {
-  grid-column: 1;
-  grid-row: 1;
+	grid-column: 1;
+	grid-row: 1;
 }
 
 #pos-2 {
-  grid-column: 2;
-  grid-row: 1;
-  padding-left: 20px;
+	grid-column: 2;
+	grid-row: 1;
+	padding-left: 20px;
 }
 
 #pos-3 {
-  padding-top: 10px;
-  grid-column: 1;
-  grid-row: 2;
+	padding-top: 10px;
+	grid-column: 1;
+	grid-row: 2;
 }
 
 #pos-4 {
-  grid-column: 2;
-  grid-row: 2;
-  padding-right: 20px;
+	grid-column: 2;
+	grid-row: 2;
+	padding-right: 20px;
 }
 
 .about-image {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .venmo-icon {
-  padding-top: 30px;
-  height: 100px;
-  width: 200px;
+	padding-top: 30px;
+	height: 100px;
+	width: 200px;
 }
 /*               App                   */
 
 /*               Collection                   */
 
 #collection {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: 350px 350px 350px 350px 350px;
-  gap: 50px;
-  padding-top: 20px;
-  background-color: transparent;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: 350px 350px 350px 350px 350px;
+	gap: 50px;
+	padding-top: 20px;
+	background-color: transparent;
 }
 
 /*               RecordCard                 */
 
 .image {
-  width: 350px;
-  height: 350px;
+	width: 350px;
+	height: 350px;
 }
 
 .image-card {
-  display: flex;
-  height: 350px;
-  width: 350px;
-  -moz-box-shadow: 3px 3px 5px 6px rgb(186, 186, 186);
-  -webkit-box-shadow: 3px 3px 5px 6px rgb(185, 185, 185);
-  box-shadow: 3px 3px 5px 6px rgb(109, 108, 108);
+	display: flex;
+	height: 350px;
+	width: 350px;
+	-moz-box-shadow: 3px 3px 5px 6px rgb(186, 186, 186);
+	-webkit-box-shadow: 3px 3px 5px 6px rgb(185, 185, 185);
+	box-shadow: 3px 3px 5px 6px rgb(109, 108, 108);
 }
 
 /*               DetailView                   */
 
 #detail-container {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: 600px 600px;
-  grid-template-rows: 700px;
-  gap: 50px;
-  margin: 100px;
-  padding-top: 150px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: 600px 600px;
+	grid-template-rows: 700px;
+	gap: 50px;
+	margin: 100px;
+	padding-top: 150px;
 }
 
 .detail-card {
-  height: 900px;
-  width: 600px;
-  text-align: center;
-  grid-column: 1;
-  -moz-box-shadow: 3px 3px 5px 6px rgb(186, 186, 186);
-  -webkit-box-shadow: 3px 3px 5px 6px rgb(185, 185, 185);
-  box-shadow: 3px 3px 5px 6px rgb(109, 108, 108);
-  padding: 15px 15px 15px 15px;
+	height: 900px;
+	width: 600px;
+	text-align: center;
+	grid-column: 1;
+	-moz-box-shadow: 3px 3px 5px 6px rgb(186, 186, 186);
+	-webkit-box-shadow: 3px 3px 5px 6px rgb(185, 185, 185);
+	box-shadow: 3px 3px 5px 6px rgb(109, 108, 108);
+	padding: 15px 15px 15px 15px;
 }
 
 .detail-image {
-  max-width: 550px;
-  height: auto;
-  padding-top: 30px;
+	max-width: 550px;
+	height: auto;
+	padding-top: 30px;
 }
 
 .details {
-  font-size: 25px;
+	font-size: 25px;
 }
 
 .description {
@@ -145,50 +145,51 @@ code {
 /*               Comments                   */
 
 .comments-container {
-  width: 600px;
-  height: 900px;
-  -moz-box-shadow: 3px 3px 5px 6px rgb(186, 186, 186);
-  -webkit-box-shadow: 3px 3px 5px 6px rgb(185, 185, 185);
-  box-shadow: 3px 3px 5px 6px rgb(109, 108, 108);
-  padding: 15px;
+	width: 600px;
+	height: 900px;
+	-moz-box-shadow: 3px 3px 5px 6px rgb(186, 186, 186);
+	-webkit-box-shadow: 3px 3px 5px 6px rgb(185, 185, 185);
+	box-shadow: 3px 3px 5px 6px rgb(109, 108, 108);
+	padding: 15px;
 }
 .comments-panel {
-  height: 600px;
-  overflow-y: auto;
+	height: 600px;
+	overflow-y: auto;
 }
 
 .comments-form {
-  height: 270px;
-  padding-top: 15px;
+	height: 270px;
+	padding-top: 15px;
 }
 
 .comment {
-  width: 500px;
+	width: 500px;
 }
 
 /*               Nav                   */
 
 #nav-bar {
-  display: grid;
-  grid-template-rows: 100px;
-  grid-template-columns: 425px 80vw;
-  padding: 40px 20px 0px 20px;
-  font-size: 50px;
+	display: grid;
+	grid-template-rows: 100px;
+	grid-template-columns: 600px 60vw;
+	padding: 40px 20px 0px 20px;
+	font-size: 47px;
 }
 #submit-record-container {
-  grid-row: 2;
-  grid-column: 2;
+	grid-row: 2;
+	grid-column: 2;
 }
 
 #title-container {
-  padding-top: 7px;
-  grid-column: 1;
+	font-family: "Notable", sans-serif;
+	padding-top: 7px;
+	grid-column: 1;
 }
 
 #button-container {
-  grid-column: 2;
+	grid-column: 2;
 }
 
 .ui-button {
-  width: 27vw;
+	width: 27vw;
 }
